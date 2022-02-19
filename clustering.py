@@ -1,4 +1,4 @@
-# To perform clustering on employees to group similar employees together.
+# Unsupervised Learning - To perform clustering on employees to group similar employees together.
 
 import scipy.cluster.hierarchy as shc
 from sklearn.cluster import AgglomerativeClustering
