@@ -1,5 +1,11 @@
 # To predict the satisfaction levels of employees using Linear Regression
 
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error
+from sklearn.metrics import accuracy_score
+from math import sqrt
+from sklearn.linear_model import LinearRegression
+
 ## A linear regression model is fit using satisfaction level as dependent variable and the other variables as independent variables
 X = hr_data[[ 'last_evaluation','number_project', 'average_montly_hours','time_spend_company', 'Work_accident', 'left', 'promotion_last_5years' , 'sales_coded', 'salary_coded']]
 y = hr_data[['satisfaction_level']]
