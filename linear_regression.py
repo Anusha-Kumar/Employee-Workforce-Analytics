@@ -4,7 +4,7 @@
 X = hr_data[[ 'last_evaluation','number_project', 'average_montly_hours','time_spend_company', 'Work_accident', 'left', 'promotion_last_5years' , 'sales_coded', 'salary_coded']]
 y = hr_data[['satisfaction_level']]
 
-## Splitting the data into train and test sets
+## Use 80-20 cross validation technique by splitting the data into train and test sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.8, random_state = 100 )
 
 ## Initialise a linear regression object and use the fit method to the train set
